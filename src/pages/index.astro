@@ -1,21 +1,7 @@
 ---
-const pageTitle = "ホームページ";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/">ホーム</a>
-    <a href="/about/">概要</a>
-    <a href="/blog/">ブログ</a>
-		<h1>{pageTitle}</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, provident! Ipsam ratione, molestiae harum beatae aperiam officiis fugit tenetur, corporis iure molestias sit et obcaecati. Voluptates possimus sit laboriosam illum.</p>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet placeat ratione maxime? Obcaecati, dicta pariatur quas esse libero enim sapiente, dolores non sit ullam similique facilis quidem consectetur voluptate quia?</p>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
